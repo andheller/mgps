@@ -41,12 +41,12 @@
 	</h1>
 </div>
 <div
-	class="flex border-8 m-auto overflow-scroll max-w-[855px] snap-proximity snap-x scroll-pl-[15px]"
+	class="flex border-8 shadow-xl m-auto overflow-scroll max-w-[855px] snap-proximity snap-x scroll-pl-[15px]"
 >
 	{#each keys as { key, color, anchor }}
 		<div
 			id={anchor}
-			class="{color} snap-start text-3xl flex place-content-center align-middle border m-[15px] min-w-[90px] min-h-[100px] relative"
+			class="{color} snap-start text-3xl flex place-content-center align-middle border shadow m-[15px] min-w-[90px] py-6 relative"
 		>
 			<div>{@html key}</div>
 		</div>
