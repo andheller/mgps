@@ -39,6 +39,7 @@
 		<span class="block xl:inline">Musical</span>
 		<span class="block text-blue-600 xl:inline">GPS</span>
 	</h1>
+	See more at&nbsp;<a href="https://musicistruth.com" target="_blank">musicistruth.com</a>
 </div>
 <div
 	class="flex border-8 shadow-xl m-auto overflow-scroll max-w-[855px] snap-proximity snap-x scroll-pl-[15px]"
