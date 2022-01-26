@@ -47,10 +47,10 @@
 <div class="hidden lg:block pb-16">
 	<div class="relative max-w-[1100px] m-auto">
 		<div
-			class="absolute bg-gradient-to-r from-white/100 to-white/0 z-10 backdrop-blur-[1px] inset-y-0 w-[200px]"
+			class="absolute bg-gradient-to-r from-white/100 to-white/0 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
-			class="absolute right-0 bg-gradient-to-r from-white/0 to-white/100 z-10 backdrop-blur-[1px] inset-y-0 w-[200px]"
+			class="absolute right-0 bg-gradient-to-r from-white/0 to-white/100 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
 			bind:this={keysContainer}
