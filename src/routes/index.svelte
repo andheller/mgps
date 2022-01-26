@@ -45,17 +45,19 @@
 
 <h2 class="text-center block lg:hidden">Not yet mobile ready, view on desktop</h2>
 <div class="hidden lg:block pb-16">
-	<div class="relative max-w-[1100px] m-auto">
+	<div class="relative max-w-[1500px] m-auto">
 		<div
 			class="absolute bg-gradient-to-r from-white/100 to-white/0 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
-			class="absolute right-0 bg-gradient-to-r from-white/0 to-white/100 z-10 backdrop-blur-none inset-y-0 w-[200px]"
+			class="absolute right-0 bg-gradient-to-r from-white/50 to-white/100 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
 			bind:this={keysContainer}
-			class="hidescrollbar flex m-auto overflow-scroll max-w-[1100px] snap-proximity snap-x relative"
+			class="hidescrollbar flex m-auto overflow-scroll max-w-[1600px] snap-proximity snap-x relative"
 		>
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
 			<div class="snap-start min-w-[100px] py-4 relative" />
 			<div class="snap-start min-w-[100px] py-4 relative" />
 			{#each $keys as { key, color, anchor }}
@@ -67,14 +69,16 @@
 			{/each}
 			<div class="snap-start min-w-[100px] py-4 relative" />
 			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
 		</div>
 	</div>
 	<div />
 
 	<div class="max-w-[700px] m-auto ">
 		<div class="grid grid-cols-7">
-			{#each $mgps as { step, textColor, name, fullname, scale, scale2, quality, scaletype, scaleuse, scaletype2, scaleTypeName, typeFrom1 }}
-				<div class="border border-gray-500">
+			{#each $mgps as { shaded, step, textColor, name, fullname, scale, scale2, quality, scaletype, scaleuse, scaletype2, scaleTypeName, typeFrom1 }}
+				<div class="border border-gray-500 {shaded ? 'bg-yellow-100' : ''}">
 					<div class="text-center border-b py-2 text-2xl {textColor}">{step}</div>
 					<div class="text-center border-b py-2 text-2xl">{name}</div>
 					<div class={advancedMode ? '' : 'hidden'}>

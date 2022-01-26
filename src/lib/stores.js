@@ -36,6 +36,7 @@ export const keys = readable([
 export const mgps = readable([
 	{
 		step: '4',
+		shaded: true,
 		textColor: '',
 		name: 'Lyd',
 		fullname: 'Lydian',
@@ -50,6 +51,7 @@ export const mgps = readable([
 	},
 	{
 		step: '1',
+		shaded: false,
 		textColor: 'text-red-500',
 		name: 'Ion',
 		fullname: 'Ionian',
@@ -64,6 +66,7 @@ export const mgps = readable([
 	},
 	{
 		step: '5',
+		shaded: true,
 		textColor: '',
 		name: 'Mix',
 		fullname: 'Mixolydian',
@@ -78,6 +81,7 @@ export const mgps = readable([
 	},
 	{
 		step: '2',
+		shaded: false,
 		textColor: 'text-red-500',
 		name: 'Dor',
 		fullname: 'Dorian',
@@ -92,6 +96,7 @@ export const mgps = readable([
 	},
 	{
 		step: '6',
+		shaded: true,
 		textColor: '',
 		name: 'Aeo',
 		fullname: 'Aeolian',
@@ -106,6 +111,7 @@ export const mgps = readable([
 	},
 	{
 		step: '3',
+		shaded: false,
 		textColor: 'text-red-500',
 		name: 'Phr',
 		fullname: 'Phrygian',
@@ -120,6 +126,7 @@ export const mgps = readable([
 	},
 	{
 		step: '7',
+		shaded: true,
 		textColor: '',
 		name: 'Loc',
 		fullname: 'Locrian',
