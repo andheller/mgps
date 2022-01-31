@@ -1,28 +1,12 @@
 <script>
 	import { keys, mgps } from '$lib/stores';
 	import { onMount } from 'svelte';
-
-	let loaded = false;
 	let keysContainer;
-	let sl = 0;
 	onMount(() => {
-		sl = 2200 - (clientWidth - 700) / 2 - 50;
-		keysContainer.scrollLeft = sl;
-		loaded = true;
+		keysContainer.scrollLeft = 800;
 	});
 	let advancedMode = false;
-
-	let sleft, clientWidth, mleft;
-
-	// $: if (sleft < 16000) {
-	// 	keysContainer.scrollLeft = 800 + 25000 - (clientWidth - 700) / 2 - 50;
-	// 	sleft = keysContainer.scrollLeft;
-	// }
-	$: mleft = 100 - (((clientWidth - 700) / 2) % 100);
-	$: sl = (clientWidth - 700) / 2;
 </script>
-
-<svelte:window bind:innerWidth={clientWidth} />
 
 <div class="text-center pt-16 pb-6">
 	<h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -59,37 +43,23 @@
 	</div>
 </div>
 
-<h2 class="text-center block md:hidden">Not yet mobile ready, view on desktop</h2>
-<div class="hidden md:block pb-16">
-	<div class="relative m-w-[5500px] m-auto">
+<h2 class="text-center block lg:hidden">Not yet mobile ready, view on desktop</h2>
+<div class="hidden lg:block pb-16">
+	<div class="relative max-w-[1500px] m-auto">
 		<div
-			class="absolute bg-gradient-to-r from-white/100 to-red-400/0 z-10 backdrop-blur-none inset-y-0 w-[200px]"
+			class="absolute bg-gradient-to-r from-white/100 to-white/0 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
 			class="absolute right-0 bg-gradient-to-r from-white/50 to-white/100 z-10 backdrop-blur-none inset-y-0 w-[200px]"
 		/>
 		<div
 			bind:this={keysContainer}
-			class="hidescrollbar flex m-auto overflow-scroll max-w-full snap-x snap-start relative transition-all delay-75 duration-300"
-			style="margin-left:-{mleft}px;"
-			on:scroll={() => (sleft = keysContainer.scrollLeft)}
+			class="hidescrollbar flex m-auto overflow-scroll max-w-[1600px] snap-proximity snap-x relative"
 		>
-			<!-- <div style="min-width:{sl + mleft}px" class="bg-white snap-start py-4 relative" /> -->
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-			<div style="min-width:100px" class="bg-white snap-start py-4 relative" />
-
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
 			{#each $keys as { key, color, anchor }}
 				<div
 					class="{color} snap-start text-3xl flex place-content-center align-middle border border-gray-500 min-w-[100px] py-4 relative"
@@ -97,7 +67,10 @@
 					<div>{@html key}</div>
 				</div>
 			{/each}
-			<div style="min-width:{sl - mleft}px" class="bg-white snap-start py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
+			<div class="snap-start min-w-[100px] py-4 relative" />
 		</div>
 	</div>
 	<div />
@@ -124,9 +97,6 @@
 			{/each}
 		</div>
 	</div>
-</div>
-<div>
-	{sleft}
 </div>
 
 <style>

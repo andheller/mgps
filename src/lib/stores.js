@@ -28,7 +28,7 @@ export const keys = readable([
 	},
 	{
 		anchor: 'fdoublesharp',
-		key: 'F<span class="absolute text-sm">#</span><span class="absolute text-sm">#</span>',
+		key: 'F<span class="absolute text-sm">##</span>',
 		color: 'text-red-800'
 	}
 ]);
