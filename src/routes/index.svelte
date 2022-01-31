@@ -125,9 +125,6 @@
 		</div>
 	</div>
 </div>
-<div>
-	{sleft}
-</div>
 
 <style>
 	.hidescrollbar::-webkit-scrollbar {
