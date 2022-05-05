@@ -1,13 +1,45 @@
 import { readable } from 'svelte/store';
 export const keys = readable([
-	{ anchor: 'bbb', key: 'B<span class="absolute text-sm">♭♭</span>', color: 'text-blue-800' },
-	{ anchor: 'fb', key: 'F<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'cb', key: 'C<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'gb', key: 'G<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'db', key: 'D<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'ab', key: 'A<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'eb', key: 'E<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
-	{ anchor: 'bb', key: 'B<span class="absolute text-sm">♭</span>', color: 'text-blue-700' },
+	{
+		anchor: 'bbb',
+		key: 'B<span class="absolute text-sm">♭♭</span>',
+		color: 'text-blue-700 bg-blue-100'
+	},
+	{
+		anchor: 'fb',
+		key: 'F<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'cb',
+		key: 'C<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'gb',
+		key: 'G<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'db',
+		key: 'D<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'ab',
+		key: 'A<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'eb',
+		key: 'E<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
+	{
+		anchor: 'bb',
+		key: 'B<span class="absolute text-sm">♭</span>',
+		color: 'text-blue-600 bg-blue-50'
+	},
 	{ anchor: 'f', key: 'F', color: 'text-gray-800' },
 	{ anchor: 'c', key: 'C', color: 'text-gray-800' },
 	{ anchor: 'g', key: 'G', color: 'text-gray-800' },
@@ -15,21 +47,45 @@ export const keys = readable([
 	{ anchor: 'a', key: 'A', color: 'text-gray-800' },
 	{ anchor: 'e', key: 'E', color: 'text-gray-800' },
 	{ anchor: 'b', key: 'B', color: 'text-gray-800' },
-	{ anchor: 'fsharp', key: 'F<span class="absolute text-sm">#</span>', color: 'text-red-700' },
-	{ anchor: 'csharp', key: 'C<span class="absolute text-sm">#</span>', color: 'text-red-700' },
-	{ anchor: 'gsharp', key: 'G<span class="absolute text-sm">#</span>', color: 'text-red-700' },
-	{ anchor: 'dsharp', key: 'D<span class="absolute text-sm">#</span>', color: 'text-red-700' },
-	{ anchor: 'asharp', key: 'A<span class="absolute text-sm">#</span>', color: 'text-red-700' },
-	{ anchor: 'esharp', key: 'E<span class="absolute text-sm">#</span>', color: 'text-red-700' },
+	{
+		anchor: 'fsharp',
+		key: 'F<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
+	{
+		anchor: 'csharp',
+		key: 'C<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
+	{
+		anchor: 'gsharp',
+		key: 'G<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
+	{
+		anchor: 'dsharp',
+		key: 'D<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
+	{
+		anchor: 'asharp',
+		key: 'A<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
+	{
+		anchor: 'esharp',
+		key: 'E<span class="absolute text-sm">#</span>',
+		color: 'text-red-600 bg-red-50'
+	},
 	{
 		anchor: 'bsharp',
 		key: 'B<span class="absolute text-sm">#</span>',
-		color: 'text-red-700'
+		color: 'text-red-600 bg-red-50'
 	},
 	{
 		anchor: 'fdoublesharp',
 		key: 'F<span class="absolute text-sm">##</span>',
-		color: 'text-red-800'
+		color: 'text-red-800 bg-red-100'
 	}
 ]);
 
